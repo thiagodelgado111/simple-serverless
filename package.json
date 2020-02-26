@@ -1,0 +1,51 @@
+{
+  "name": "simple-serverless",
+  "version": "0.0.1",
+  "description": "",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simple-serverless.git"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/simple-serverless/issues"
+  },
+  "homepage": "https://github.com/simple-serverless#readme",
+  "devDependencies": {
+    "ava": "^3.4.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.8",
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
